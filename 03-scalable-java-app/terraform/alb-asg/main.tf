@@ -14,7 +14,7 @@ module "alb-asg" {
   egress_alb_cidr_blocks           = var.egress_alb_cidr_blocks
   internal                         = var.internal
   loadbalancer_type                = var.loadbalancer_type
-  subnets                          = var.subnets
+  subnets                          = var.subnet_ids
   target_group_port                = var.target_group_port
   target_group_protocol            = var.target_group_protocol
   vpc_id                           = var.vpc_id
